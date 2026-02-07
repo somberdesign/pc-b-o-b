@@ -32,13 +32,14 @@
 
 		; select scanner
 		Sleep 50 * DELAY_COEFFICIENT
-		SendEvent "{Right 2}{Enter}"
+		;SendEvent "{Right 1}{Enter}"
+		SendEvent "{Enter}"
 		Sleep 325 * DELAY_COEFFICIENT
 
 		; change dpi
 		; 2025-12-23 this section is untested after converting to v2
 		; 2025-12-16 disabled this section because the + prefix isn't working
-		if (1 = 0) {
+		if (1 = 0) { 
 			if (TARGET_MEDIA = "magazine") {
 				SendEvent "{Tab 2}+{Space}" ; {Tab 4}450"
 			}
