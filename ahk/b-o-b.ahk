@@ -32,8 +32,8 @@
 
 		; select scanner
 		Sleep 50 * DELAY_COEFFICIENT
-		;SendEvent "{Right 1}{Enter}"
-		SendEvent "{Enter}"
+		SendEvent "{Right 1}{Enter}"
+		;SendEvent "{Enter}"
 		Sleep 325 * DELAY_COEFFICIENT
 
 		; change dpi
