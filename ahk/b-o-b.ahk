@@ -7,6 +7,7 @@
 
 ;IfWinActive ahk_exe i_view64.exe ; IrfanView
 
+^+e:: SendInput "p:\Media\Images\DvdImages{Enter}"
 
 #HotIf WinActive("ahk_exe mspaint.exe") ; Paint
 	
