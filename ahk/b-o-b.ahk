@@ -1,4 +1,5 @@
 
+SetTitleMatchMode 1 ; exact
 
 ; # Window
 ; ^ Ctrl
@@ -8,6 +9,11 @@
 ;IfWinActive ahk_exe i_view64.exe ; IrfanView
 
 ^+e:: SendInput "p:\Media\Images\DvdImages{Enter}"
+
+#HotIf WinActive("Save as")
+	^l:: {
+		SendEvent("^l{Tab 7}")
+	}
 
 #HotIf WinActive("ahk_exe mspaint.exe") ; Paint
 	
