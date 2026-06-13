@@ -31,17 +31,11 @@ SetTitleMatchMode 1 ; exact
 		SetKeyDelay DEFAULT_KEY_DELAY
 
 
-		SendEvent "{Click Left}"
+		SendEvent "{Click Left}" ; File
 		Sleep 50 * DELAY_COEFFICIENT
 
 		; open scan dialog
 		SendEvent "{Down 2}{Right}{Down}{Enter}"
-
-		; select scanner
-		Sleep 50 * DELAY_COEFFICIENT
-		SendEvent "{Right 1}{Enter}"
-		;SendEvent "{Enter}"
-		Sleep 325 * DELAY_COEFFICIENT
 
 		; change dpi
 		; 2025-12-23 this section is untested after converting to v2
